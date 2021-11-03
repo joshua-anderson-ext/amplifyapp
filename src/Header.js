@@ -1,5 +1,3 @@
-const { AmplifySignOut } = require("@aws-amplify/ui-react");
-
 function Header() {
   return (
     <header className="p-3 d-flex flex-row flex-wrap justify-content-start shadow-md">
@@ -25,9 +23,6 @@ function Header() {
                                 <div style={{height: '22px'}}>
                                     <a href="/help">?</a>
                                 </div>
-                            </div>
-                            <div>
-                                <AmplifySignOut/>
                             </div>
                         </div>
                     </div>

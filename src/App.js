@@ -2,12 +2,6 @@ import './styles/style.css';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import Dashboard from './components/dashboard.js';
-import Amplify from 'aws-amplify';
-import awsconfig from './aws-exports';
-import { withAuthenticator } from '@aws-amplify/ui-react';
-
-Amplify.configure(awsconfig);
-
 
 function App() {
   return (
@@ -21,4 +15,4 @@ function App() {
   );
 }
 
-export default withAuthenticator(App);
+export default App;
