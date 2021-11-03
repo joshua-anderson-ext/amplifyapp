@@ -1,0 +1,387 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	overflow-x: hidden;
+}
+main {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-top: 158px;
+}
+@media screen and (min-width: 576px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 768px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 992px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 960px;
+	}
+}
+@media screen and (min-width: 1200px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1200px;
+	}
+}
+@font-face {
+    font-family: 'Michelin';
+    src: url('./fonts/Michelin-SemiBold.eot');
+    src: url('./fonts/Michelin-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Michelin-SemiBold.woff') format('woff'),
+        url('./fonts/Michelin-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Michelin';
+    src: url('./fonts/Michelin-Regular.eot');
+    src: url('./fonts/Michelin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Michelin-Regular.woff') format('woff'),
+        url('./fonts/Michelin-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Michelin';
+    src: url('./fonts/Michelin-Bold.eot');
+    src: url('./fonts/Michelin-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Michelin-Bold.woff') format('woff'),
+        url('./fonts/Michelin-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Michelin';
+    src: url('./fonts/Michelin-Black.eot');
+    src: url('./fonts/Michelin-Black.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Michelin-Black.woff') format('woff'),
+        url('./fonts/Michelin-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Michelin';
+    src: url('./fonts/Michelin-Light.eot');
+    src: url('./fonts/Michelin-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Michelin-Light.woff') format('woff'),
+        url('./fonts/Michelin-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+header {
+    background: #27509B;
+    border-bottom: 4px solid #fce500;
+	height: auto;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+.headerTitleCont {
+	min-height: 48px;
+}
+.headerTitleCont h1 {
+	transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+	background: white;
+	border-top: 4px solid #fce500;
+	position: relative;
+	bottom: 0;
+}
+.footerBlock {
+	border-right: 4px solid darkgrey;
+}
+.footerBlock:last-child {
+	border: none !important;
+}
+.footerBlock h3{
+	text-transform: uppercase;
+	color: #27509B;
+	font-size: 18px;
+	font-family: 'Michelin-Bold', sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+.socialIconCont img {
+	height: 40px;
+	max-height: 40px;
+	border-radius: 5px;
+}
+.copyrightCont {
+	border-top: 4px solid #fce500;
+	background-color: #27509B;
+}
+.loginTitle {
+	font-family: 'Michelin', sans-serif;
+	font-weight: bold;
+}
+.loginCard {
+	background: #E6E6E6;
+	border-radius: 10px;
+}
+.loginForm input, .settingsForm input {
+	margin-bottom: 20px;
+	border:none;
+	border-bottom: 1px solid black;
+	background: transparent;
+	width: 100%;
+}
+.loginForm button {
+	background: #27509B;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+.loginCardFooter a {
+	color: #27509B;
+}
+.welcomeCont h3 {
+	font-size: 20px;
+	font-family: 'Michelin', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+.initialsCont {
+	background: #07ab0c;
+	width: 50px;
+	height: 50px;
+}
+.initialsCont p {
+	line-height: 20px;
+	margin-bottom: 0;
+	font-size: 25px;
+}
+.infoCont p {
+	line-height: 1.2;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.helpButton {
+	background: white;
+	font-size: 30px;
+	font-weight: bold;
+	width: 38px;
+	height: 38px;
+}
+.helpButton a {
+	line-height: 21px;
+	font-size: 23px;
+	display:block;
+}
+.sidebarCont {
+	padding-right: 0 !important;
+}
+.sidebarCont h2 {
+	margin-top: 0.5rem;
+}
+.sidebarCont li {
+	padding: 5px 15px;
+	border-left: 8px solid transparent;
+}
+.sidebarCont li .sidebarIcon {
+	width: 20%;
+	margin-right: 0.5rem;
+	position: relative;
+	text-align: center;
+}
+.sidebarCont li img {
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.sidebarCont li a {
+	color: black;
+}
+.sidebarCont li:hover {
+	border-left: 8px solid #fce500;
+	background: lightgray;
+}
+.sidebarCont li i {
+	color: black;
+	font-size: 35px;
+	line-height: 1.6;
+}
+.sidebarCont .settingsItem {
+	margin-top: 4rem;
+}
+.sidebarCont .settingsItem:hover {
+	border-right: none !important;
+}
+.filterTools form {
+	max-height: 40px;
+}
+.filterTools form input {
+	max-height: 40px;
+}
+.summaryCard, .circleCard {
+	border-right: 6px solid gray;
+}
+.summaryCard h1 {
+	margin-bottom: 0;
+	font-size: 45px;
+	line-height: 0.9;
+}
+.summaryCard img {
+	width: 80px;
+}
+.summaryCard p {
+	margin-bottom: 0;
+}
+.summaryCard h3 {
+	margin-bottom: 0;
+	font-size: 20px;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+.summaryCardHeader {
+	font-weight: 700;
+	text-transform: none !important;
+	font-size: 30px !important;
+}
+.inventoryCard {
+	border-right: 6px solid gray;
+}
+.inventoryCard img {
+	height: 30px;
+}
+.inventoryCard i {
+	font-size: 30px;
+}
+.inventoryCard h3 {
+	font-size: 35px;
+}
+.legendCont {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.legendSquare {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 15px;
+	height: 15px;
+}
+.legendGreen {
+	background: #b1c94e;
+}
+.legendYellow {
+	background: #f6fe00;
+}
+.legendRed {
+	background: #fe2d00;
+}
+.reportCont {
+	background: lightgray;
+}
+.reportTitle {
+	background: darkgrey;
+}
+.reportCont table, .settingsCont table {
+	border-collapse: separate;
+	border-spacing: 15px 0;
+}
+.settingsCont {
+	background: lightgray;
+}
+.settingsCont table td {
+	font-size: 13px;
+}
+.settingsDropdown {
+	background: none;
+	border: none;
+	border-bottom: 1px solid black;
+	color: gray;
+	padding-left:0;
+}
+.settingsForm textarea {
+	min-height: 100px;
+	width: 100%;
+}
+.settingsForm button {
+	background: #27509B;
+	border: none;
+	color: white;
+	border-radius: 5px;
+}
+th {
+	text-align: center;
+}
+td {
+	vertical-align: top;
+	text-align: center;
+}
+.top-row {
+	border-bottom: 4px solid black;
+	border-top: none !important;
+	font-size: 25px;
+}
+.green-dot {
+	border-radius: 50%;
+	background-color: green;
+	border-color: none;
+}
+.blue-dot {
+	border-radius: 50%;
+	background-color: blue;
+	border-color: none;
+}
+.yellow-dot {
+	border-radius: 50%;
+	background-color: yellow;
+	border-color: none;
+}
+.red-dot {
+	border-radius: 50%;
+	background-color: red;
+	border-color: none;
+}
+.summary-border {
+	border-width: 3px !important;
+}
+@media screen and (max-width: 992px) {
+	.headerTitleCont h1 {
+		text-align: left !important;
+	}
+	.footerBlock.block1, .footerBlock.block2 {
+		padding-bottom: 1.5rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.sidebarCont {
+		padding-right: 15px !important;
+	}
+}
+@media screen and (max-width: 576px) {
+	.headerTitleCont h1 {
+		padding-left: 15px !important;
+	}
+	main {
+		padding-top: 280px;
+	}
+}
